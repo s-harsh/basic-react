@@ -76,8 +76,8 @@ console.log(printInfo('Harsh',20));
 // Default Parameter ---------------.>
 /*
 If i use default parameter then,if you forget to write the parameter, it won’t return an undefined error
- because the parameter is already defined in the default. So when you run your function with a missed parameter,
-  it will take the value of the default parameter t, and it will not return an error! 
+ because the parameter is already defined in the default. So when you run your function with a
+missed parameter,it will take the value of the default parameter t, and it will not return an error! 
 
 As you see, the function returns a value even though we missed the second parameter. Now with the default
 parameter we can handle the error in advance
