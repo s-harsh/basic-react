@@ -3,20 +3,30 @@
 <head>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    <script src="js.js"></script>
     <title>Document</title>
     
 </head>
 <body>
 
     <div id="mydiv"></div>
+    <div id="mydivtest"></div>
+
 
     <script type="text/babel">
       function Hello() {
         return <h1>Hello World!</h1>;
       }
 
+      function HelloHarsh() {
+        return <h1>Hello Harsh!</h1>;
+      }
+      // what is the naming convention for the react
+
+
       ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+      ReactDOM.render(<HelloHarsh />, document.getElementById('mydivtest'))
     </script>
 </body>
 </html>
