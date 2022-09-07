@@ -154,6 +154,7 @@ class Person extends Human {
  person.printGender();
 
 
+ 
  // ES7 Classes 
  // We don't need to use constructor
  // Behind the scene constructor will still be transformed to use constructor function
