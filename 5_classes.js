@@ -43,7 +43,22 @@ Strict mode makes several changes to normal JavaScript semantics:
 
     3.Prohibits some syntax likely to be defined in future versions of ECMAScript.
 
-    ````````````More about strict mode we learn in further``````````````````````````*/
+    ````````````More about strict mode we learn in further``````````````````````````
+    
+    
+One key distinction between functions and classes was highlighted in this talk which
+suggests that a function is a behavior that can carry data while, inversely, a class
+is data that can carry behavior.
+
+ES6 classes are syntactic sugar for the prototypical class system we use today.
+ They make your code more concise and self-documenting.
+ 
+a class defines a type which can be instantiated at runtime, whereas a prototype
+is itself an object instance.
+
+Classes are used to create and manage new objects and support inheritance—a key
+ingredient in object-oriented programming and a mechanism of reusing code.
+    */
 
 
 // Example of Class Declaratinos 
@@ -88,6 +103,7 @@ console.log(Rectangle.name);
 
 
 // Prototype methods ------->
+// In JavaScript, every function and object has a property named prototype by default.
 class Rectangle2{
     constructor(height,width){
         this.height=height;
@@ -107,9 +123,25 @@ const square = new Rectangle2(10,10);
 console.log(square.area);   // 100
 
 
-
- class Person{
+// Inheritance --->
+class Human{
     constructor(){
+        this.gender='Male';
+    }
+    printGender(){
+        console.log(this.gender);
+    }
+}
+
+class Person extends Human {
+    constructor(){
+        super();
+        /* IF you are extending another class and you are implementing the construtor which you don't
+        have to. But if you, then you have to add super this special super method in the constructor.
+        It's a keyword and it simply executes the parent constructor to which you of course have to correct
+        initialize the parent class.
+        Basically The super keyword is used to call the constructor of its parent class to access the parent's
+         properties and methods. */
         this.name='Harsh Soni';
     }
     printMyName(){
@@ -119,3 +151,4 @@ console.log(square.area);   // 100
 
  const person=new Person();
  person.printMyName();
+ PaymentResponse.printGender();
