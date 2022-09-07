@@ -151,4 +151,19 @@ class Person extends Human {
 
  const person=new Person();
  person.printMyName();
- PaymentResponse.printGender();
+ person.printGender();
+
+
+ // ES7 Classes 
+ // We don't need to use constructor
+ // Behind the scene constructor will still be transformed to use constructor function
+ // Methods use arrow function, but still use this 😒
+ class newClass{
+    Name='Harsh';
+    Age=20;
+
+    printIntro=(Name,Age)=>  `Hi ${this.Name}, you are ${this.Age} year old`; 
+ }
+
+ const es7Class= new newClass();
+ console.log(es7Class.printIntro());
