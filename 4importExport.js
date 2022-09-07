@@ -32,7 +32,6 @@ export let name1, name2/*, … */; // also var
 export const name3 = 1, name4 = 2/*, … */; // also var, let
 export function functionName() { /* … */ }
 export class ClassName { /* … */ }
-export function* generatorFunctionName() { /* … */ }
 
 // Export list
 export { Name1, /* …, */ nameN };
@@ -40,12 +39,8 @@ export { variable1 as Name1, variable2 as Name2, /* …, */ nameN };
 
 // Default exports
 // export default expression1;
-// export default function functionName1() { /* … */ }
-// export default class ClassName { /* … */ }
-export default function* generatorFunctionName() { /* … */ }
-export default function () { /* … */ }
-export default class { /* … */ }
-export default function* () { /* … */ }
+export default function functionName1() { /* … */ }
+export default class ClassName { /* … */ }
 
 
 export default function detail(name,age){

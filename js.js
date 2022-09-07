@@ -20,6 +20,7 @@ Arrow function run just fastere then normal funciton.
 JS Rule — A JavaScript function will always return 'undefined' unless explicitly or implicitly told otherwise.
  */
 
+
 // ES5
 function myName (name){
     return 'Hello '+ name;
