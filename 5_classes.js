@@ -7,7 +7,7 @@ A class is creaed with the class keyword and a class can have both
   your code more secure and encapsulated. Using classes gives your code a
   nice structure and keeps it oriented.
  
- We can notic from constructor functions and indeed classes are kind of 
+ We can notice from constructor functions and indeed classes are kind of 
  a more conveninent way of creating constructor functions.
  There can only be one special method with the name "constructor" in a class.
 A SyntaxError will be thrown if the class contains more than one occurrence of a constructor method.
