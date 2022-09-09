@@ -109,7 +109,7 @@ Note: Only place the “use strict” directive outside your function if it is o
 entire script or enclosing scope to be in strict mode.*/
 
 // Define a “use strict” directive outside your function:
-"use strict";
+// "use strict";
 
 // Define a function with one rest parameter:
 function printMyName(...value) {
@@ -118,6 +118,7 @@ function printMyName(...value) {
 
 // Invoke the printMyName function while passing two arguments to its parameters:
 printMyName("Oluwatobi", "Sofela");
+
 
 // The invocation above will return:
 ["Oluwatobi", "Sofela"]
