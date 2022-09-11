@@ -101,9 +101,9 @@ console.log(courseOne, courseTwo);
 
 // React, Node
 
-{name1}={name1:'Harsh',age:20}
-console.log(name1); // Harsh
-console.log(age); // undefined
+// {name1}={name1:'Harsh',age:20}
+// console.log(name1); // Harsh
+// console.log(age); // undefined
 
 const numbers=[1,2,3];
 
