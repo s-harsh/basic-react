@@ -204,3 +204,92 @@ numberArray.sort((a, b) => (a-b));
 // Now for descending order
 numberArray.sort((a,b)=> (b-a));
 
+// splice () array Method
+// Helps you add, update, and remove elements in an array.
+// The main purpose of the splice() is to delete elements from array
+// You can add and replace elements using it as well.
+// To add element pass the position where we want to add,
+// how many elements to delete starting with the position, and the element to add.
+console.log(`Before splice names are : ${names}`);
+names.splice(1,0,'Zack');
+console.log(`After splice names are : ${names}`);
+// return [Alex,Zack,Bob,John,Tom,Tom]
+
+// delete
+const deleted = names.splice(2, 1, 'zack');
+console.log(deleted); // return ['Bob']
+console.log()
+console.log(`After splice delete names are : ${names}`);
+// return [Alex,Zack,zack,John,Tom,Tom]
+
+
+// at() Method
+const junkFoodILove = ['🥖', '🍔', '🍟', '🍕', '🌭', '🥪', '🌮', '🍿'];
+
+junkFoodILove.at(0); // 🥖
+junkFoodILove.at(3); // 🍕
+junkFoodILove.at(-1); // 🍿
+junkFoodILove.at(-5); // 🍕
+junkFoodILove.at(-8); // 🥖
+junkFoodILove.at(10); // undefined
+
+
+
+// Static Array Mehtods
+// 1.Array.isArray()
+
+// 2. Array.from()
+
+// 3. Array.of()
+Array.of(2, false, 'test', {'name': 'Alex'})
+console.log(Array.of(2, false, 'test', {'name': 'Alex'}));
+// return (4) [2, false, 'test', {…}]
+
+
+
+// Array Iterator Methods ---------------------------------------------->
+
+// map
+// creates new array by iterating through the elements & applying logic provided in function
+const doubleNumArray=numberArray.map((num)=>{
+    return num*2;
+});
+console.log(numberArray);
+console.log(doubleNumArray);
+
+
+// filter() Method
+// Creates new array with all the elements that satisfies the condition mentioned in function
+const positiveNums=numberArray.filter((ele)=>{
+    return ele>0;
+});
+console.log(positiveNums);
+
+// some() method
+// Returns boolean value based on at least one element in the array passing the condition
+let hasGreater30=numberArray.some((ele)=>{
+    return ele>30;
+})
+console.log(hasGreater30);
+
+
+// find() Method
+// It returns the first matched element from the array that satisfies the condition in function.
+const ele=numberArray.find((num)=>{
+    return num>100;
+});
+console.log(ele);
+// If no match found return undefined
+
+
+// every () Method
+// detects if every element of the array satisfies the condition passed in the function.
+const atLest50=numberArray.every((num)=>{
+    return num>50;
+})
+console.log(atLest50);
+// return false
+
+
+
+
