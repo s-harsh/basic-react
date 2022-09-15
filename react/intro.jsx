@@ -34,4 +34,9 @@ to tell the native side(Android/iOS) that these are packages I need to run my ap
 And it adds all the dependencies needed to run the app.
 
 Bacially you don't need node.js to use React on the client side
+
+
+JSX - JavaScript XML  bacially HTML code insid eof JavaScript
+It allows us to write HTML in react
+JSX makes it easier to write and add HTML in React.
  */
