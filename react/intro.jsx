@@ -14,5 +14,12 @@ JavaScript code for some logic.
 COmponents advantages -
 1. Reusability reduce reputation 
 2. Separation of Concerns - Don't do too manu things in one & the same place
-3. 
+
+
+React allows you to create re-usuable and reactive acomponents consisting of
+HTML and JavaScript(and CSS).
+React use Declarative Approach for building these components means define the
+desired target state and let React figure out the actual JavaScript DOM instructions.
+
+
  */
