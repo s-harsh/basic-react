@@ -2,12 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const para=document.createElement('p');
+  para.textContent='This is harsh by js';
+  document.getElementById('root').append(para);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+        </p>
+        
+        <p>
+          This is Harsh!
         </p>
         <a
           className="App-link"
