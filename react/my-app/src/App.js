@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ExpenseItem from './ExpenseItem';
+import ExpenseItem1 from './ExpenseItem1';
 
 function App() {
   const para=document.createElement('p');
@@ -14,6 +15,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <ExpenseItem></ExpenseItem>
+        <ExpenseItem1></ExpenseItem1>
         <p>
           This is Harsh!
         </p>

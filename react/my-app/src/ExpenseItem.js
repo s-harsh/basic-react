@@ -1,5 +1,6 @@
 import './ExpenseItem.css'
 function ExpenseItem(){
+    /* This is example of hard code*/
     return (
         // writing more complex JSX Code
         // Note - must have a root 
