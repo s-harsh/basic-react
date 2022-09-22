@@ -20,6 +20,7 @@ function App() {
       amount: 500,
       date: new Date(2022, 8, 20),
     },
+    
   ];
   const para = document.createElement("p");
   para.textContent = "This is harsh by js";
