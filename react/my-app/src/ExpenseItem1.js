@@ -5,18 +5,19 @@ If we want to  add javaScript in the JSX code we use this {} */
 /* We use props in React to pass data from one component to another (from a parent component to a child component(s)).
 Props is just a shorter way of saying properties. They are useful when you want the flow of data in your app to be dynamic. */
 
+import Card from './card';
 import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
 function ExpenseItem(props) {
   return (
-    <div className='expense-item'>
+    <Card className='expense-item'>
       <ExpenseDate date={props.date} />
       <div className='expense-item__description'>
         <h2>{props.title}</h2>
         <div className='expense-item__price'>${props.amount}</div>
       </div>
-    </div>
+    </Card>
   );
 }
 
