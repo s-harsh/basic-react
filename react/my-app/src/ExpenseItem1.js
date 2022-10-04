@@ -9,6 +9,11 @@ import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
 function ExpenseItem(props) {
+  
+  /* Don't too much logics on the JSX code ..make a seperate function then use it */
+  const clickHandler=()=>{
+    alert('Clicked!!');
+  };
   return (
     <div className='expense-item'>
       <ExpenseDate date={props.date} />
@@ -16,6 +21,13 @@ function ExpenseItem(props) {
         <h2>{props.title}</h2>
         <div className='expense-item__price'>${props.amount}</div>
       </div>
+      <button onClick={clickHandler} >Change Title!</button>
+      {/* Here we just point the function not execute it here, we don't add parentheses here
+      Just repeat the name of the function.
+      Because if we add parentheses here js would execute this when this line of code is being parsed
+      adn this line of code parsed when the JSX code is returned, So it's then not executeing clickhandler
+      when the click occurs but when thei JSX code is evaluated and that would be too early */}
+      <button onClick={()=>{alert('Clicked!!!!!')}} >Change Title!</button>
     </div>
   );
 }

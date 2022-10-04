@@ -15,3 +15,6 @@ function ExpenseDate(props) {
 }
 
 export default ExpenseDate;
+
+/* The toLocaleString() method returns a Date object as a string, using locale settings.
+ The default language depends on the locale setup on your computer. */
