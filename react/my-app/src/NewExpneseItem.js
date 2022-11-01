@@ -4,7 +4,7 @@ import "./expense.css";
 function NewExpenseItem(props) {
   return (
     <div className="expenses">
-      <h2>Let's get started!</h2>
+      <h2>Let's get started! Harsh</h2>
       <ExpenseItem1
         title={props.expenses[0].title}
         amount={props.expenses[0].amount}
